@@ -26,7 +26,7 @@ def main():
 
     # Refresh button
     if st.button("Refresh"):
-        answer = query_chatgpt(st.session_state['prompt'], st.session_state['config'])
+        answer = "refreshed......" #query_chatgpt(st.session_state['prompt'], st.session_state['config'])
         st.write(answer)
 
     # Settings button
@@ -41,7 +41,7 @@ def main():
             st.session_state['config'] = config
 
     # Display response
-    answer = query_chatgpt(st.session_state['prompt'], st.session_state['config'])
+    answer = "answered............" #query_chatgpt(st.session_state['prompt'], st.session_state['config'])
     st.write(answer)
 
 
